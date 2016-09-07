@@ -1,0 +1,111 @@
+
+ body {
+    font-family:'Open Sans', sans-serif;
+    color: #85939b;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Open Sans', sans-serif;
+    color: #232a2f;
+}
+h3, h4, h5 {
+    font-family:'Raleway', sans-serif;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+iframe{
+    border:0;
+    outline: 0;
+}
+.header-content {
+    margin-bottom: 40px;
+    color: #FFF;
+    text-align: center;
+}
+.header-content h2 {
+    font-weight: 300;
+    font-size: 40px;
+}
+.header-content h3 {
+    font-family:'Raleway', sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+ul.list li:before {
+    position: absolute;
+    left: 3px;
+    font-family:'FontAwesome';
+    content:'\f105';
+}
+ul.list {
+    padding-left: 28px;
+    padding-bottom: 10px;
+    list-style: none;
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+}
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+/*
+    [ GENERAL ELEMENTS ]
+*/
+ a {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    color: #ffffff;
+}
+a:hover {
+    color: #c082ff;
+    text-decoration: none;
+}
+
+.titlePosition{
+    width:100px; 
+    height:30px;
+    margin:10px 30px;
+    color:#ffffff;
+    font-size:2em;
+}
+
+.loginButtonPosition{
+    width:100px; 
+    height:30px;
+    margin:-30px 30px;
+    font-size:1em;
+    float: right;
+}
+
+.formstyle{
+           width:300px;  
+           height:200px;  
+           position:absolute;  
+           left:50%;  
+           top:50%;  
+           margin:-100px 0 0 -150px;
+           font-family: 微软雅黑Light;
+        }
+.registerButtonStyle{
+           width:170px;  
+           height:37px;  
+           position:absolute;  
+           left:50%;  
+           top:50%;  
+           margin:48px 0 0 -20px;
+           font-family: 微软雅黑Light;
+        }
