@@ -11,7 +11,7 @@
     <title>用户注册</title>
 </head>
 <body>    
-    <form class="form-horizontal formstyle" role="form" method="post" action="RegisterServlet">
+    <form name="registerform" class="form-horizontal formstyle" role="form" method="post" action="RegisterServlet" onsubmit="return validate(this);">
         <div class="form-group">
             <div class="col-sm-12">
                 <label for="username">用户名</label>
@@ -26,6 +26,14 @@
             </div>
             <div class="col-sm-12">
                 <input type="password" class="form-control" id="password" name="password" placeholder="在此输入密码">
+            </div>
+        </div>
+                <div class="form-group">
+            <div class="col-sm-12">
+                <label for="password">重新输入一次密码</label>
+            </div>
+            <div class="col-sm-12">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="在此输入密码">
             </div>
         </div>
         <div class="form-group">
@@ -45,6 +53,23 @@
             </div>
         </div>
     </form>
+    <script type="text/javascript">
+		function validate(registerform) {
+			if (registerform.username.value == "") {
+				alert("对不起，用户名不能为空！");
+				return false;
+			}
+			if (registerform.password.value == "") {
+				alert("对不起，密码不能为空！");
+				return false;
+			}
+			if (registerform.password.value != registerform.repassword.value ){
+				alert("两次输入密码不一致！");
+				return false;
+			}
+			return true;
+		}
+	</script>
 </body>
 </html>
 

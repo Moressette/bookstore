@@ -40,16 +40,15 @@ public class RegisterServlet extends HttpServlet {
 		String username = (String)request.getParameter("username");
 		String password = (String)request.getParameter("password");
 		String email = (String)request.getParameter("email");
-		System.out.println(username+password+email);
 		User user = new User(username,password);
 		user.setEmail(email);
 		UserDao userdao = new UserDaoimpl();
 		boolean flag = userdao.register(user);
 		if(flag){
-			out.print("<script>alert('注册成功');window.location.href=('index.html');</script>");
+			out.print("<script>alert('注册成功');window.location.href=('login.jsp');</script>");
 		}
 		else{
-			out.print("<script>alert('注册失败');window.location.href=('index.html');</script>");
+			out.print("<script>alert('用户名已存在');window.location.href=('register.jsp');</script>");
 		}
 	}
 
